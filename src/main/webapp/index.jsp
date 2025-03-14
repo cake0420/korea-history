@@ -186,7 +186,7 @@
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ question: "question?" })
+                body: JSON.stringify({ question: question })
             });
             console.log("서버 요청 전송: ", question);
 
