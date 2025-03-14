@@ -11,6 +11,6 @@
 
     <servlet-mapping>
         <servlet-name>GeminiController</servlet-name>
-        <url-pattern>/test  </url-pattern>
+        <url-pattern>/api/test</url-pattern>
     </servlet-mapping>
 </web-app>
