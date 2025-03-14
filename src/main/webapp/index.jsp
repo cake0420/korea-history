@@ -174,18 +174,19 @@
             return;
         }
 
+
         // 버튼 비활성화 (중복 요청 방지)
         button.disabled = true;
         button.innerText = "문답을 요청 중...";
         answerDiv.innerHTML = "<p>문답을 준비 중입니다...</p>";
 
         try {
-            let response = await fetch("https://korea-history.onrender.com/api/test", {
+            let response = await fetch("/api/test", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ question: "Hello?" })
+                body: JSON.stringify({ question: "question?" })
             });
             console.log("서버 요청 전송: ", question);
 
