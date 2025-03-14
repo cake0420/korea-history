@@ -180,12 +180,12 @@
         answerDiv.innerHTML = "<p>문답을 준비 중입니다...</p>";
 
         try {
-            let response = await fetch('/api/test', {
-                method: 'POST',
+            let response = await fetch("https://korea-history.onrender.com/api/test", {
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json',
+                    "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ question : question })
+                body: JSON.stringify({ question: "Hello?" })
             });
             console.log("서버 요청 전송: ", question);
 
