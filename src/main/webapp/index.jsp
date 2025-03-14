@@ -180,7 +180,7 @@
         answerDiv.innerHTML = "<p>문답을 준비 중입니다...</p>";
 
         try {
-            let response = await fetch('/test', {
+            let response = await fetch('/api/test', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

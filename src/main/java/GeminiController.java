@@ -10,7 +10,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 
-@WebServlet("/test")
+@WebServlet("/api/test")
 public class GeminiController extends HttpServlet {
     private final GeminiService geminiService = new GeminiService();
     private final ObjectMapper objectMapper = new ObjectMapper(); // ObjectMapper 인스턴스 생성
