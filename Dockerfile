@@ -9,7 +9,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Tomcat 배포 스테이지
-FROM tomcat:10-jdk17-temurin
+FROM tomcat:10-jdk17
 
 COPY --from=builder /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
