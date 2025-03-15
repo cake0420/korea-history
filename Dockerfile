@@ -13,6 +13,8 @@ FROM tomcat:10-jdk17
 
 COPY --from=builder /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
+ENV CATALINA_OPTS="-Dcatalina.shutdown.port=-1"
+
 EXPOSE 8080
 
 CMD ["catalina.sh", "run"]
