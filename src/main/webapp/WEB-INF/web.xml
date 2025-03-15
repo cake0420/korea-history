@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>GeminiController</servlet-name>
-        <servlet-class>GeminiController</servlet-class>
+        <servlet-class>com.example.GeminiController</servlet-class>
     </servlet>
 
     <servlet-mapping>

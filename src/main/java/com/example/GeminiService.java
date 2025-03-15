@@ -1,3 +1,5 @@
+package com.example;
+
 import com.google.genai.Client;
 import com.google.genai.types.GenerateContentResponse;
 import io.github.cdimascio.dotenv.Dotenv;
